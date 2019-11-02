@@ -1,0 +1,148 @@
+a, h1, label, h2, p, input[type="text"] {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+body {
+  background-color: #F5F5F5; }
+
+button {
+  width: 40%;
+  height: 30px;
+  background-color: #1fc27a;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px; }
+
+.light-btn {
+  width: 70%;
+  height: 30px;
+  background-color: #1fc27a;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px; }
+
+.hard-btn {
+  width: 70%;
+  height: 30px;
+  background-color: #1fc27a;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px; }
+
+.input-text {
+  width: 90%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #E0E0E0;
+  color: #989898;
+  margin-bottom: 20px;
+  background-color: #E8E8E8; }
+
+.input-textarea {
+  width: 90%;
+  height: 70px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #E0E0E0;
+  color: #989898;
+  background-color: #E8E8E8; }
+
+.label-form {
+  color: #B0B0B0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.05em; }
+
+.img-profile {
+  width: 70%;
+  height: 70%; }
+
+.heading-home {
+  font-weight: 600;
+  font-size: 40px;
+  color: #505050; }
+
+.heading-home-second {
+  font-weight: 600;
+  font-size: 22px;
+  color: #BEBEBE; }
+
+.heading-home-third {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #1a8c8c; }
+
+.divider {
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: #bf9475; }
+
+.divider-second {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-color: #1fc27a;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.background-home {
+  background-image: url("/static/images/study.svg");
+  height: 700px;
+  background-repeat: no-repeat; }
+
+.card-register {
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 10px 20px #B8B8B8; }
+
+.form-regis {
+  padding-left: 20px; }
+
+.link-move {
+  text-align: center;
+  margin-left: auto;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 12px;
+  margin-top: 20px; }
+
+.heading-data {
+  font-size: 30px;
+  letter-spacing: 0.04em; }
+
+.card-name {
+  background-color: white;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 10px; }
+
+.nav-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px; }
+
+.link-navbar {
+  color: #A9A9A9; }
+
+/*# sourceMappingURL=style.css.map */

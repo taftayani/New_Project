@@ -1,0 +1,65 @@
+.heading-home{
+    font-weight: 600;
+    font-size: 40px;
+    color: 	#505050;
+}
+.heading-home-second{
+    font-weight: 600;
+    font-size: 22px;
+    color: 	#BEBEBE;
+}
+.heading-home-third{
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: 	 #1a8c8c;
+}
+.divider{
+    content: "";
+    width: 20%;
+    height: 3px;
+   background-color: rgb(191, 148, 117);
+}
+.divider-second{
+    content: "";
+    width: 20%;
+    height: 5px;
+   background-color: #1fc27a;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.background-home{
+    background-image: url('/static/images/study.svg');
+    height: 700px;
+    background-repeat: no-repeat;
+}
+.card-register{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 10px 20px#B8B8B8;
+}
+.form-regis{
+    padding-left: 20px;
+}
+.link-move{
+    text-align: center;
+    margin-left: auto;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 12px;
+    margin-top: 20px;
+}
+.heading-data{
+    font-size: 30px;
+    letter-spacing: 0.04em;
+}
+.card-name{
+    background-color: white;
+    margin-right: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
