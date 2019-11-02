@@ -17,6 +17,32 @@ button {
   display: block;
   margin-top: 20px; }
 
+.light-btn {
+  width: 70%;
+  height: 30px;
+  background-color: #1fc27a;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px; }
+
+.hard-btn {
+  width: 70%;
+  height: 30px;
+  background-color: #1fc27a;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px; }
+
 .input-text {
   width: 90%;
   height: 30px;
@@ -102,7 +128,14 @@ button {
   margin-top: 20px; }
 
 .heading-data {
-  font-size: 30px; }
+  font-size: 30px;
+  letter-spacing: 0.04em; }
+
+.card-name {
+  background-color: white;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 10px; }
 
 .nav-logo {
   width: 30px;

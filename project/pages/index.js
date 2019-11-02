@@ -1,16 +1,64 @@
 import React from 'react'
 import Head from '../components/HTMLComponent/Head'
 import Nav from '../components/Component/Navbar'
-
+import Cookies from 'react-cookies'
 import { createPublicKey } from 'crypto'
 
 
 export default class index extends React.Component {
-  OnMove(){
-    window.location="/List"
+  constructor() {
+    super();
+    this.state = {
+      full_name: '',
+      age: '',
+      email: '',
+      Desk: ''
+
+    }
+  }
+
+  OnMove() {
+    window.location = "/List"
+  }
+
+  Onchage(e) {
+    var name = e.target.name
+    var value = e.target.value
+
+    this.setState({
+      [name]: value
+    })
+  }
+
+  BtnActive() {
+    if (!(this.state.full_name)||!(this.state.age)
+    || !(this.state.email)||!(this.state.Desk)) {
+      return (
+        <div>
+          <button className='btn-disable' disabled>Kirim Data</button>
+        </div>
+      )
+    }
+
+    else {
+      return (
+
+        <div>
+          <button className='btn-active' type="submit">Kirim Data</button>
+        </div>)
+    }
+
+  }
+  BtnSubmit(e) {
+    e.preventDefault();
+    Cookies.save('Data', this.state)
+
+    window.location = '/List'
   }
   render() {
+    console.log(this.state)
     return (
+
       <div>
         <Head />
         <Nav />
@@ -30,28 +78,26 @@ export default class index extends React.Component {
                   <h1 className="heading-home-third">Daftarkan Diri</h1>
                   <div className="divider-second" />
                   <div className="form-regis">
-                    <form>
 
-                      <label className="label-form">
+                    <form onSubmit={this.BtnSubmit.bind(this)}>
+                      <label className="label-form" >
                         Nama Lengkap
                     </label>
-                      <input placeholder="nama Lengkap" type='text' className="input-text" />
+                      <input placeholder="nama Lengkap" name="full_name" onChange={this.Onchage.bind(this)} type='text' className="input-text" />
                       <label className="label-form">
-                        Gaji Yang Diinginkan
+                        Umur
                     </label>
-                      <input placeholder="gaji diingkan" type='text' className="input-text" />
+                      <input placeholder="umur" type='text' name="age" onChange={this.Onchage.bind(this)} className="input-text" />
                       <label className="label-form">
-                        Umur Anda
+                        Email
                     </label>
-                      <input placeholder="umur" type='text' className="input-text" />
+                      <input placeholder="email" type='text' name="email" onChange={this.Onchage.bind(this)} className="input-text" />
                       <label className="label-form">
                         Deskripsi Diri
                     </label>
-                      <textarea placeholder="Deskripsi Diri" type='text' className="input-textarea" />
+                      <textarea placeholder="Deskripsi Diri" name="Desk" onChange={this.Onchage.bind(this)} type='text' className="input-textarea" />
 
-                      <button>Kirim Data</button>
-                      <a style={{ color: '#e06341' }} className="link-move"
-                      href='/list'>Lihat Data Pegawai</a>
+                      {this.BtnActive()}
                     </form>
                   </div>
                 </div>

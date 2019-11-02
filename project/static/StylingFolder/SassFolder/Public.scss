@@ -7,8 +7,24 @@ body{
    background-color: #F5F5F5; 
 }
 
-button{
-    width: 40%;
+table{
+  width: 100%;
+}
+// button{
+//     width: 40%;
+//     height: 30px;
+//     background-color: #1fc27a;
+//     border-radius: 20px;
+//     color: white;
+//     font-size: 14px;
+//     font-weight: 700;
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: block;
+//     margin-top: 20px;
+// }
+.btn-active{
+  width: 40%;
     height: 30px;
     background-color: #1fc27a;
     border-radius: 20px;
@@ -19,6 +35,20 @@ button{
     margin-right: auto;
     display: block;
     margin-top: 20px;
+}
+.btn-disable{
+  width: 40%;
+    height: 30px;
+    background-color: grey;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    opacity: 0.6;
 }
 .light-btn{
     width: 70%;
@@ -76,6 +106,12 @@ button{
   width: 70%;
   height: 70%;
 }
-
+.card-list{
+  background-color: white;
+  padding-left: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 10px 10px grey;
+  margin-top: 20px;
+}
 @import 'Home.scss';
 @import 'Navbar.scss'

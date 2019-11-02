@@ -10,7 +10,7 @@ export default class Navbar extends React.Component {
                  <Head/>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
-                        <a class="link-navbar navbar-brand" style={{color:'#A9A9A9'}}>
+                        <a target="_blank" href="https://github.com/taftayani/New_Project" class="link-navbar navbar-brand" style={{color:'#A9A9A9'}}>
                             <img src ="/static/images/github.png" className="nav-logo"/>
                              Muhammad Breda Taftayani</a>
                     </div>
